@@ -5,11 +5,19 @@ Python este whitespace-sensitive.
 
 virgula: este întotdeauna separator
 
+În Python totul este un obiect!
+
+OOP = object-oriented programming
+
+"Python is self-documenting"
+
+În Python totul este o referință!
 
 # essential debugging tools
 
 print()
 type() # returnează data-type-ul
+help()
 
 
 # data types:
@@ -17,6 +25,15 @@ int
 float
 str
 bool # True / False
+tuple
+list # mutable
+dict
+
+notă: str, list & tuple sunt "sequences"
+sequences:
+ - sunt iterabile
+ - suportă metodele .count() și .index()
+ - toate suportă acces după index
 
 # operatori:
 - au prioritate
@@ -38,6 +55,8 @@ noi întâlniți
  and
  or
  not
+ is
+ is not
 
 
 
@@ -48,7 +67,7 @@ SyntaxError / IndentationError
 NameError   # când acest simbol nu este definit
 TypeError   # apare când data type-ul nu este potrivit
 ValueError  # apare când valoare nu poate fi procesată
-
+IndexError  # când nu există indexul
 
 
 
