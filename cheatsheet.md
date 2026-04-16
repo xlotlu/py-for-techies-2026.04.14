@@ -13,6 +13,11 @@ OOP = object-oriented programming
 
 În Python totul este o referință!
 
+
+despre Python se spune că vine cu "batteries included"
+   (și dacă nu există deja în stdlib, probabil cineva a rezolvat deja problema)
+
+
 # essential debugging tools
 
 print()
@@ -32,8 +37,13 @@ dict
 notă: str, list & tuple sunt "sequences"
 sequences:
  - sunt iterabile
+ - toate suportă funcția len()
  - suportă metodele .count() și .index()
  - toate suportă acces după index
+   (inclusiv index negativ)
+ - toate suportă slicing
+ - toate suportă operatorul `in`
+
 
 # operatori:
 - au prioritate
@@ -55,6 +65,7 @@ noi întâlniți
  and
  or
  not
+ in
  is
  is not
 
