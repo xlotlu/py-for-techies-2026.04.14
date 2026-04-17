@@ -66,9 +66,9 @@ noi întâlniți
  or
  not
  in
+ not in
  is
  is not
-
 
 
 # excepția
@@ -76,10 +76,12 @@ noi întâlniți
 (o eroare)
 SyntaxError / IndentationError
 NameError   # când acest simbol nu este definit
+UnboundLocalError # la fel ca NameError
+                  # (doar că va fi declarată variabila mai târziu)
 TypeError   # apare când data type-ul nu este potrivit
 ValueError  # apare când valoare nu poate fi procesată
 IndexError  # când nu există indexul
-
+KeyError    # când nu există cheia
 
 
 # funcția:
@@ -92,23 +94,26 @@ IndexError  # când nu există indexul
 - poate avea side-effects
 
 
+# instalare de library-uri
+
+(în shell de sistem...)
+
+pip install pandas
+pip install ipython
+
 
 # lucrul cu VSCode:
 
 Ctrl + /    comment selection
+Ctrl + F5   execută fișierul
+Shift+Enter execută selecția într-un terminal de Python
 
 
 # essential wisdom
 
 DRY = don't repeat yourself
 
-There are two vey difficult problems in computing:
+There are two very difficult problems in computing:
  - naming things
-
-
-
-
-
-# TODO:
-să procesăm un input de forma "hour:minutes"
-
+ - cache invalidation
+ - off-by-one errors
